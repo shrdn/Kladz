@@ -1,4 +1,21 @@
 Kladz::Application.routes.draw do
+  get "companies/index"
+
+  get "companies/new"
+
+  get "companies/create"
+
+  get "companies/show"
+
+  get "companies/update"
+
+  get "companies/destroy"
+
+  devise_for :users
+
+  get "dashboard/home"
+
+  root :to => "dashboard#home"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
